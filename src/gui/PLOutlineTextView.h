@@ -1,0 +1,21 @@
+//
+//  PLOutlineTextView.h
+//  PaperLess2
+//
+//  Created by DINH Viêt Hoà on 19/08/08.
+//  Copyright 2008 __MyCompanyName__. All rights reserved.
+//
+
+#import <Cocoa/Cocoa.h>
+
+#define PLOUTLINETEXTVIEW_ACTIVATED @"PLOUTLINETEXTVIEW_ACTIVATED"
+#define PLOUTLINETEXTVIEW_DEACTIVATED @"PLOUTLINETEXTVIEW_DEACTIVATED"
+
+#define PLOUTLINETEXTVIEW_CANCEL @"PLOUTLINETEXTVIEW_CANCEL"
+#define PLOUTLINETEXTVIEW_DIDINSERTTEXT @"PLOUTLINETEXTVIEW_DIDINSERTTEXT"
+
+@interface PLOutlineTextView : NSTextView {
+
+}
+
+@end

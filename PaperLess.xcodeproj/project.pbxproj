@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		C60F2ACA0D940C8F00DBC40B /* PLScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C60F2AC30D940C8F00DBC40B /* PLScanner.m */; };
+		C60F2ACB0D940C8F00DBC40B /* PLScannerList.m in Sources */ = {isa = PBXBuildFile; fileRef = C60F2AC50D940C8F00DBC40B /* PLScannerList.m */; };
+		C60F2ACC0D940C8F00DBC40B /* PLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C60F2AC70D940C8F00DBC40B /* PLUtils.m */; };
+		C60F2DC50D940CFC00DBC40B /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60F2DC30D940CFC00DBC40B /* Carbon.framework */; };
+		C60F2DC60D940CFC00DBC40B /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60F2DC40D940CFC00DBC40B /* ApplicationServices.framework */; };
+		C60F2DD70D940DE300DBC40B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C60F2DD00D940DE300DBC40B /* InfoPlist.strings */; };
+		C60F2DD80D940DE300DBC40B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60F2DD20D940DE300DBC40B /* MainMenu.xib */; };
+		C60F2DD90D940DE300DBC40B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60F2DD40D940DE300DBC40B /* MainWindow.xib */; };
+		C60F2DF40D967B2000DBC40B /* PLPDFPageGeneration.m in Sources */ = {isa = PBXBuildFile; fileRef = C60F2DF30D967B2000DBC40B /* PLPDFPageGeneration.m */; };
+		C60F2DF70D98292A00DBC40B /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60F2DF60D98292A00DBC40B /* Quartz.framework */; };
+		C60F2E760D982CD500DBC40B /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = C60F2E740D982CD500DBC40B /* Preferences.xib */; };
+		C60F2E810D982EA100DBC40B /* PLApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C60F2E800D982EA100DBC40B /* PLApplicationDelegate.m */; };
+		C60F2E840D983FF400DBC40B /* PLMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C60F2E830D983FF400DBC40B /* PLMainWindowController.m */; };
+		C60F2F3B0D986C8300DBC40B /* scanner.png in Resources */ = {isa = PBXBuildFile; fileRef = C60F2F3A0D986C8300DBC40B /* scanner.png */; };
+		C60F2F790D9998C100DBC40B /* PLSQLDB.m in Sources */ = {isa = PBXBuildFile; fileRef = C60F2F780D9998C100DBC40B /* PLSQLDB.m */; };
+		C6240E340E5857E6002D6DD5 /* NSFileManager+MetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = C6240E330E5857E6002D6DD5 /* NSFileManager+MetaData.m */; };
+		C62410D30E58F0DD002D6DD5 /* NSString+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = C62410D20E58F0DD002D6DD5 /* NSString+Date.m */; };
+		C62412630E59430F002D6DD5 /* PLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C62412620E59430F002D6DD5 /* PLTextView.m */; };
+		C62414960E5B7593002D6DD5 /* PLOutlineTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C62414950E5B7593002D6DD5 /* PLOutlineTextView.m */; };
+		C62416390E5E3823002D6DD5 /* PLCompletionTree.m in Sources */ = {isa = PBXBuildFile; fileRef = C62416380E5E3823002D6DD5 /* PLCompletionTree.m */; };
+		C624163E0E5F3E9A002D6DD5 /* PLCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = C624163D0E5F3E9A002D6DD5 /* PLCompletion.m */; };
+		C63317BA16D20E5B0004F01D /* PLEyeFiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C63317B916D20E5B0004F01D /* PLEyeFiManager.m */; };
+		C6B763BF0E3169CB00A1C4A6 /* NSString+UUID.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B763BE0E3169CB00A1C4A6 /* NSString+UUID.m */; };
+		C6B764250E324B0F00A1C4A6 /* PLDocumentByDate.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B764240E324B0F00A1C4A6 /* PLDocumentByDate.m */; };
+		C6B765A10E354F8B00A1C4A6 /* PLOutlineView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B765A00E354F8B00A1C4A6 /* PLOutlineView.m */; };
+		C6B768AD0E3D379B00A1C4A6 /* NSArray+sort.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B768AC0E3D379B00A1C4A6 /* NSArray+sort.m */; };
+		C6B76B840E3FE7DF00A1C4A6 /* PLFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B76B830E3FE7DF00A1C4A6 /* PLFileManager.m */; };
+		C6B76C830E411E4000A1C4A6 /* PLPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B76C820E411E4000A1C4A6 /* PLPreferencesWindowController.m */; };
+		C6DA11A60E55E9ED006D8807 /* preview.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6DA11A50E55E9ED006D8807 /* preview.icns */; };
+		C6DA122B0E564161006D8807 /* PLPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6DA122A0E564161006D8807 /* PLPDFView.m */; };
+		C6DD87050E4FB3C900D430F6 /* filequeue.png in Resources */ = {isa = PBXBuildFile; fileRef = C6DD87040E4FB3C900D430F6 /* filequeue.png */; };
+		C6DD87120E4FB3E800D430F6 /* PaperLess.icns in Resources */ = {isa = PBXBuildFile; fileRef = C6DD87110E4FB3E800D430F6 /* PaperLess.icns */; };
+		C6DD876B0E4FBC6900D430F6 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = C6DD876A0E4FBC6900D430F6 /* folder.png */; };
+		C6F6450A0E92EC890047A008 /* pref_advanced.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C6F645080E92EC890047A008 /* pref_advanced.tiff */; };
+		C6F6450B0E92EC890047A008 /* pref_general.tiff in Resources */ = {isa = PBXBuildFile; fileRef = C6F645090E92EC890047A008 /* pref_general.tiff */; };
+		C6F646DC0E982D250047A008 /* twain_client.c in Sources */ = {isa = PBXBuildFile; fileRef = C6F646DA0E982D250047A008 /* twain_client.c */; };
+		C6F646EC0E983E6B0047A008 /* TWAIN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6F646EB0E983E6B0047A008 /* TWAIN.framework */; };
+		C6F646F50E98DF060047A008 /* PLTwainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F646F40E98DF060047A008 /* PLTwainManager.m */; };
+		C6F646F80E98DF0F0047A008 /* PLTwainSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F646F70E98DF0F0047A008 /* PLTwainSource.m */; };
+		C6F64A8F0EB279D30047A008 /* PLScannerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F64A8E0EB279D30047A008 /* PLScannerUtils.m */; };
+		C6F64A9E0EB39E420047A008 /* PLPageSizeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F64A9D0EB39E420047A008 /* PLPageSizeInfo.m */; };
+		C6F64BBB0EB664280047A008 /* PLTwainScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F64BBA0EB664280047A008 /* PLTwainScanner.m */; };
+		C6FDF32D0E2B7C5E00FBB6BA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C6FDF32C0E2B7C5E00FBB6BA /* libsqlite3.dylib */; };
+		C6FDF3340E2D608000FBB6BA /* PLDocumentTreeDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FDF3330E2D608000FBB6BA /* PLDocumentTreeDataSource.m */; };
+		C6FDF3390E2D68BB00FBB6BA /* PLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FDF3380E2D68BB00FBB6BA /* PLDocument.m */; };
+		C6FDF3440E2D6F8F00FBB6BA /* PLLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FDF3430E2D6F8F00FBB6BA /* PLLibrary.m */; };
+		C6FDF3470E2D716100FBB6BA /* PLIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = C6FDF3460E2D716100FBB6BA /* PLIndex.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107320486CEB800E47090 /* PaperLess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaperLess.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C60F2AC20D940C8F00DBC40B /* PLScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLScanner.h; sourceTree = "<group>"; };
+		C60F2AC30D940C8F00DBC40B /* PLScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLScanner.m; sourceTree = "<group>"; };
+		C60F2AC40D940C8F00DBC40B /* PLScannerList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLScannerList.h; sourceTree = "<group>"; };
+		C60F2AC50D940C8F00DBC40B /* PLScannerList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLScannerList.m; sourceTree = "<group>"; };
+		C60F2AC60D940C8F00DBC40B /* PLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLUtils.h; sourceTree = "<group>"; };
+		C60F2AC70D940C8F00DBC40B /* PLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLUtils.m; sourceTree = "<group>"; };
+		C60F2DC30D940CFC00DBC40B /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		C60F2DC40D940CFC00DBC40B /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		C60F2DD10D940DE300DBC40B /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C60F2DD30D940DE300DBC40B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C60F2DD50D940DE300DBC40B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		C60F2DE10D940E9100DBC40B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		C60F2DF20D967B2000DBC40B /* PLPDFPageGeneration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPDFPageGeneration.h; sourceTree = "<group>"; };
+		C60F2DF30D967B2000DBC40B /* PLPDFPageGeneration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPDFPageGeneration.m; sourceTree = "<group>"; };
+		C60F2DF60D98292A00DBC40B /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
+		C60F2E750D982CD500DBC40B /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/Preferences.xib; sourceTree = "<group>"; };
+		C60F2E7F0D982EA100DBC40B /* PLApplicationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLApplicationDelegate.h; sourceTree = "<group>"; };
+		C60F2E800D982EA100DBC40B /* PLApplicationDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLApplicationDelegate.m; sourceTree = "<group>"; };
+		C60F2E820D983FF400DBC40B /* PLMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLMainWindowController.h; sourceTree = "<group>"; };
+		C60F2E830D983FF400DBC40B /* PLMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLMainWindowController.m; sourceTree = "<group>"; };
+		C60F2F3A0D986C8300DBC40B /* scanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanner.png; sourceTree = "<group>"; };
+		C60F2F770D9998C100DBC40B /* PLSQLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLSQLDB.h; sourceTree = "<group>"; };
+		C60F2F780D9998C100DBC40B /* PLSQLDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLSQLDB.m; sourceTree = "<group>"; };
+		C6240E320E5857E6002D6DD5 /* NSFileManager+MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+MetaData.h"; sourceTree = "<group>"; };
+		C6240E330E5857E6002D6DD5 /* NSFileManager+MetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+MetaData.m"; sourceTree = "<group>"; };
+		C62410D10E58F0DD002D6DD5 /* NSString+Date.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Date.h"; sourceTree = "<group>"; };
+		C62410D20E58F0DD002D6DD5 /* NSString+Date.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Date.m"; sourceTree = "<group>"; };
+		C62412610E59430F002D6DD5 /* PLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTextView.h; sourceTree = "<group>"; };
+		C62412620E59430F002D6DD5 /* PLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTextView.m; sourceTree = "<group>"; };
+		C62414940E5B7593002D6DD5 /* PLOutlineTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOutlineTextView.h; sourceTree = "<group>"; };
+		C62414950E5B7593002D6DD5 /* PLOutlineTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOutlineTextView.m; sourceTree = "<group>"; };
+		C62416370E5E3823002D6DD5 /* PLCompletionTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCompletionTree.h; sourceTree = "<group>"; };
+		C62416380E5E3823002D6DD5 /* PLCompletionTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCompletionTree.m; sourceTree = "<group>"; };
+		C624163C0E5F3E9A002D6DD5 /* PLCompletion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCompletion.h; sourceTree = "<group>"; };
+		C624163D0E5F3E9A002D6DD5 /* PLCompletion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCompletion.m; sourceTree = "<group>"; };
+		C63317B816D20E5B0004F01D /* PLEyeFiManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLEyeFiManager.h; sourceTree = "<group>"; };
+		C63317B916D20E5B0004F01D /* PLEyeFiManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLEyeFiManager.m; sourceTree = "<group>"; };
+		C6B763BD0E3169CB00A1C4A6 /* NSString+UUID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+UUID.h"; sourceTree = "<group>"; };
+		C6B763BE0E3169CB00A1C4A6 /* NSString+UUID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+UUID.m"; sourceTree = "<group>"; };
+		C6B764230E324B0F00A1C4A6 /* PLDocumentByDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLDocumentByDate.h; sourceTree = "<group>"; };
+		C6B764240E324B0F00A1C4A6 /* PLDocumentByDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLDocumentByDate.m; sourceTree = "<group>"; };
+		C6B7659F0E354F8B00A1C4A6 /* PLOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLOutlineView.h; sourceTree = "<group>"; };
+		C6B765A00E354F8B00A1C4A6 /* PLOutlineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLOutlineView.m; sourceTree = "<group>"; };
+		C6B768AB0E3D379B00A1C4A6 /* NSArray+sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+sort.h"; sourceTree = "<group>"; };
+		C6B768AC0E3D379B00A1C4A6 /* NSArray+sort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+sort.m"; sourceTree = "<group>"; };
+		C6B76B820E3FE7DF00A1C4A6 /* PLFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLFileManager.h; sourceTree = "<group>"; };
+		C6B76B830E3FE7DF00A1C4A6 /* PLFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLFileManager.m; sourceTree = "<group>"; };
+		C6B76C810E411E4000A1C4A6 /* PLPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPreferencesWindowController.h; sourceTree = "<group>"; };
+		C6B76C820E411E4000A1C4A6 /* PLPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPreferencesWindowController.m; sourceTree = "<group>"; };
+		C6DA11A50E55E9ED006D8807 /* preview.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = preview.icns; sourceTree = "<group>"; };
+		C6DA12290E564161006D8807 /* PLPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPDFView.h; sourceTree = "<group>"; };
+		C6DA122A0E564161006D8807 /* PLPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPDFView.m; sourceTree = "<group>"; };
+		C6DD87040E4FB3C900D430F6 /* filequeue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filequeue.png; sourceTree = "<group>"; };
+		C6DD87110E4FB3E800D430F6 /* PaperLess.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PaperLess.icns; sourceTree = "<group>"; };
+		C6DD876A0E4FBC6900D430F6 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
+		C6F645080E92EC890047A008 /* pref_advanced.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = pref_advanced.tiff; sourceTree = "<group>"; };
+		C6F645090E92EC890047A008 /* pref_general.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = pref_general.tiff; sourceTree = "<group>"; };
+		C6F646DA0E982D250047A008 /* twain_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = twain_client.c; sourceTree = "<group>"; };
+		C6F646DB0E982D250047A008 /* twain_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = twain_client.h; sourceTree = "<group>"; };
+		C6F646EB0E983E6B0047A008 /* TWAIN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TWAIN.framework; path = /System/Library/Frameworks/TWAIN.framework; sourceTree = "<absolute>"; };
+		C6F646F30E98DF060047A008 /* PLTwainManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTwainManager.h; sourceTree = "<group>"; };
+		C6F646F40E98DF060047A008 /* PLTwainManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTwainManager.m; sourceTree = "<group>"; };
+		C6F646F60E98DF0F0047A008 /* PLTwainSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTwainSource.h; sourceTree = "<group>"; };
+		C6F646F70E98DF0F0047A008 /* PLTwainSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTwainSource.m; sourceTree = "<group>"; };
+		C6F64A6B0EB279260047A008 /* PLScannerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLScannerProtocol.h; sourceTree = "<group>"; };
+		C6F64A8D0EB279D30047A008 /* PLScannerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLScannerUtils.h; sourceTree = "<group>"; };
+		C6F64A8E0EB279D30047A008 /* PLScannerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLScannerUtils.m; sourceTree = "<group>"; };
+		C6F64A9C0EB39E420047A008 /* PLPageSizeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLPageSizeInfo.h; sourceTree = "<group>"; };
+		C6F64A9D0EB39E420047A008 /* PLPageSizeInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLPageSizeInfo.m; sourceTree = "<group>"; };
+		C6F64BB90EB664280047A008 /* PLTwainScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTwainScanner.h; sourceTree = "<group>"; };
+		C6F64BBA0EB664280047A008 /* PLTwainScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTwainScanner.m; sourceTree = "<group>"; };
+		C6FDF32C0E2B7C5E00FBB6BA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = /usr/lib/libsqlite3.dylib; sourceTree = "<absolute>"; };
+		C6FDF3320E2D608000FBB6BA /* PLDocumentTreeDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLDocumentTreeDataSource.h; sourceTree = "<group>"; };
+		C6FDF3330E2D608000FBB6BA /* PLDocumentTreeDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLDocumentTreeDataSource.m; sourceTree = "<group>"; };
+		C6FDF3370E2D68BB00FBB6BA /* PLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLDocument.h; sourceTree = "<group>"; };
+		C6FDF3380E2D68BB00FBB6BA /* PLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLDocument.m; sourceTree = "<group>"; };
+		C6FDF3420E2D6F8F00FBB6BA /* PLLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLLibrary.h; sourceTree = "<group>"; };
+		C6FDF3430E2D6F8F00FBB6BA /* PLLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLLibrary.m; sourceTree = "<group>"; };
+		C6FDF3450E2D716100FBB6BA /* PLIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLIndex.h; sourceTree = "<group>"; };
+		C6FDF3460E2D716100FBB6BA /* PLIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLIndex.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				C60F2DC50D940CFC00DBC40B /* Carbon.framework in Frameworks */,
+				C60F2DC60D940CFC00DBC40B /* ApplicationServices.framework in Frameworks */,
+				C60F2DF70D98292A00DBC40B /* Quartz.framework in Frameworks */,
+				C6FDF32D0E2B7C5E00FBB6BA /* libsqlite3.dylib in Frameworks */,
+				C6F646EC0E983E6B0047A008 /* TWAIN.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6F646EB0E983E6B0047A008 /* TWAIN.framework */,
+				C60F2DF60D98292A00DBC40B /* Quartz.framework */,
+				C60F2DC30D940CFC00DBC40B /* Carbon.framework */,
+				C60F2DC40D940CFC00DBC40B /* ApplicationServices.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* PaperLess.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* PaperLess2 */ = {
+			isa = PBXGroup;
+			children = (
+				C60F2DCF0D940DE300DBC40B /* resources */,
+				C60F2AB70D940B6B00DBC40B /* src */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = PaperLess;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6FDF32C0E2B7C5E00FBB6BA /* libsqlite3.dylib */,
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C60F2AB70D940B6B00DBC40B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				C60F2ABD0D940C8F00DBC40B /* backend */,
+				C60F2ABC0D940BBC00DBC40B /* gui */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		C60F2ABC0D940BBC00DBC40B /* gui */ = {
+			isa = PBXGroup;
+			children = (
+				C60F2E7F0D982EA100DBC40B /* PLApplicationDelegate.h */,
+				C60F2E800D982EA100DBC40B /* PLApplicationDelegate.m */,
+				C6FDF3320E2D608000FBB6BA /* PLDocumentTreeDataSource.h */,
+				C6FDF3330E2D608000FBB6BA /* PLDocumentTreeDataSource.m */,
+				C60F2E820D983FF400DBC40B /* PLMainWindowController.h */,
+				C60F2E830D983FF400DBC40B /* PLMainWindowController.m */,
+				C6B7659F0E354F8B00A1C4A6 /* PLOutlineView.h */,
+				C6B765A00E354F8B00A1C4A6 /* PLOutlineView.m */,
+				C62414940E5B7593002D6DD5 /* PLOutlineTextView.h */,
+				C62414950E5B7593002D6DD5 /* PLOutlineTextView.m */,
+				C6DA12290E564161006D8807 /* PLPDFView.h */,
+				C6DA122A0E564161006D8807 /* PLPDFView.m */,
+				C6B76C810E411E4000A1C4A6 /* PLPreferencesWindowController.h */,
+				C6B76C820E411E4000A1C4A6 /* PLPreferencesWindowController.m */,
+				C62412610E59430F002D6DD5 /* PLTextView.h */,
+				C62412620E59430F002D6DD5 /* PLTextView.m */,
+			);
+			path = gui;
+			sourceTree = "<group>";
+		};
+		C60F2ABD0D940C8F00DBC40B /* backend */ = {
+			isa = PBXGroup;
+			children = (
+				C6B768AB0E3D379B00A1C4A6 /* NSArray+sort.h */,
+				C6B768AC0E3D379B00A1C4A6 /* NSArray+sort.m */,
+				C6240E320E5857E6002D6DD5 /* NSFileManager+MetaData.h */,
+				C6240E330E5857E6002D6DD5 /* NSFileManager+MetaData.m */,
+				C62410D10E58F0DD002D6DD5 /* NSString+Date.h */,
+				C62410D20E58F0DD002D6DD5 /* NSString+Date.m */,
+				C6B763BD0E3169CB00A1C4A6 /* NSString+UUID.h */,
+				C6B763BE0E3169CB00A1C4A6 /* NSString+UUID.m */,
+				C624163C0E5F3E9A002D6DD5 /* PLCompletion.h */,
+				C624163D0E5F3E9A002D6DD5 /* PLCompletion.m */,
+				C62416370E5E3823002D6DD5 /* PLCompletionTree.h */,
+				C62416380E5E3823002D6DD5 /* PLCompletionTree.m */,
+				C6FDF3370E2D68BB00FBB6BA /* PLDocument.h */,
+				C6FDF3380E2D68BB00FBB6BA /* PLDocument.m */,
+				C6B764230E324B0F00A1C4A6 /* PLDocumentByDate.h */,
+				C6B764240E324B0F00A1C4A6 /* PLDocumentByDate.m */,
+				C6B76B820E3FE7DF00A1C4A6 /* PLFileManager.h */,
+				C6B76B830E3FE7DF00A1C4A6 /* PLFileManager.m */,
+				C6FDF3450E2D716100FBB6BA /* PLIndex.h */,
+				C6FDF3460E2D716100FBB6BA /* PLIndex.m */,
+				C6FDF3420E2D6F8F00FBB6BA /* PLLibrary.h */,
+				C6FDF3430E2D6F8F00FBB6BA /* PLLibrary.m */,
+				C6F64A9C0EB39E420047A008 /* PLPageSizeInfo.h */,
+				C6F64A9D0EB39E420047A008 /* PLPageSizeInfo.m */,
+				C60F2DF20D967B2000DBC40B /* PLPDFPageGeneration.h */,
+				C60F2DF30D967B2000DBC40B /* PLPDFPageGeneration.m */,
+				C60F2AC20D940C8F00DBC40B /* PLScanner.h */,
+				C60F2AC30D940C8F00DBC40B /* PLScanner.m */,
+				C60F2AC40D940C8F00DBC40B /* PLScannerList.h */,
+				C60F2AC50D940C8F00DBC40B /* PLScannerList.m */,
+				C6F64A8D0EB279D30047A008 /* PLScannerUtils.h */,
+				C6F64A8E0EB279D30047A008 /* PLScannerUtils.m */,
+				C6F64A6B0EB279260047A008 /* PLScannerProtocol.h */,
+				C60F2F770D9998C100DBC40B /* PLSQLDB.h */,
+				C60F2F780D9998C100DBC40B /* PLSQLDB.m */,
+				C6F646F30E98DF060047A008 /* PLTwainManager.h */,
+				C6F646F40E98DF060047A008 /* PLTwainManager.m */,
+				C6F64BB90EB664280047A008 /* PLTwainScanner.h */,
+				C6F64BBA0EB664280047A008 /* PLTwainScanner.m */,
+				C6F646F60E98DF0F0047A008 /* PLTwainSource.h */,
+				C6F646F70E98DF0F0047A008 /* PLTwainSource.m */,
+				C60F2AC60D940C8F00DBC40B /* PLUtils.h */,
+				C60F2AC70D940C8F00DBC40B /* PLUtils.m */,
+				C6F646DA0E982D250047A008 /* twain_client.c */,
+				C6F646DB0E982D250047A008 /* twain_client.h */,
+				C63317B816D20E5B0004F01D /* PLEyeFiManager.h */,
+				C63317B916D20E5B0004F01D /* PLEyeFiManager.m */,
+			);
+			path = backend;
+			sourceTree = "<group>";
+		};
+		C60F2DCF0D940DE300DBC40B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				C6F645080E92EC890047A008 /* pref_advanced.tiff */,
+				C6F645090E92EC890047A008 /* pref_general.tiff */,
+				C6DA11A50E55E9ED006D8807 /* preview.icns */,
+				C6DD876A0E4FBC6900D430F6 /* folder.png */,
+				C6DD87110E4FB3E800D430F6 /* PaperLess.icns */,
+				C6DD87040E4FB3C900D430F6 /* filequeue.png */,
+				C60F2F3A0D986C8300DBC40B /* scanner.png */,
+				C60F2DE10D940E9100DBC40B /* Info.plist */,
+				C60F2DD00D940DE300DBC40B /* InfoPlist.strings */,
+				C60F2DD20D940DE300DBC40B /* MainMenu.xib */,
+				C60F2DD40D940DE300DBC40B /* MainWindow.xib */,
+				C60F2E740D982CD500DBC40B /* Preferences.xib */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* PaperLess */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PaperLess" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PaperLess;
+			productInstallPath = "$(HOME)/Applications";
+			productName = PaperLess;
+			productReference = 8D1107320486CEB800E47090 /* PaperLess.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PaperLess" */;
+			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* PaperLess */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* PaperLess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C60F2DD70D940DE300DBC40B /* InfoPlist.strings in Resources */,
+				C60F2DD80D940DE300DBC40B /* MainMenu.xib in Resources */,
+				C60F2DD90D940DE300DBC40B /* MainWindow.xib in Resources */,
+				C60F2E760D982CD500DBC40B /* Preferences.xib in Resources */,
+				C60F2F3B0D986C8300DBC40B /* scanner.png in Resources */,
+				C6DD87050E4FB3C900D430F6 /* filequeue.png in Resources */,
+				C6DD87120E4FB3E800D430F6 /* PaperLess.icns in Resources */,
+				C6DD876B0E4FBC6900D430F6 /* folder.png in Resources */,
+				C6DA11A60E55E9ED006D8807 /* preview.icns in Resources */,
+				C6F6450A0E92EC890047A008 /* pref_advanced.tiff in Resources */,
+				C6F6450B0E92EC890047A008 /* pref_general.tiff in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				C60F2ACA0D940C8F00DBC40B /* PLScanner.m in Sources */,
+				C60F2ACB0D940C8F00DBC40B /* PLScannerList.m in Sources */,
+				C60F2ACC0D940C8F00DBC40B /* PLUtils.m in Sources */,
+				C60F2DF40D967B2000DBC40B /* PLPDFPageGeneration.m in Sources */,
+				C60F2E810D982EA100DBC40B /* PLApplicationDelegate.m in Sources */,
+				C60F2E840D983FF400DBC40B /* PLMainWindowController.m in Sources */,
+				C60F2F790D9998C100DBC40B /* PLSQLDB.m in Sources */,
+				C6FDF3340E2D608000FBB6BA /* PLDocumentTreeDataSource.m in Sources */,
+				C6FDF3390E2D68BB00FBB6BA /* PLDocument.m in Sources */,
+				C6FDF3440E2D6F8F00FBB6BA /* PLLibrary.m in Sources */,
+				C6FDF3470E2D716100FBB6BA /* PLIndex.m in Sources */,
+				C6B763BF0E3169CB00A1C4A6 /* NSString+UUID.m in Sources */,
+				C6B764250E324B0F00A1C4A6 /* PLDocumentByDate.m in Sources */,
+				C6B765A10E354F8B00A1C4A6 /* PLOutlineView.m in Sources */,
+				C6B768AD0E3D379B00A1C4A6 /* NSArray+sort.m in Sources */,
+				C6B76B840E3FE7DF00A1C4A6 /* PLFileManager.m in Sources */,
+				C6B76C830E411E4000A1C4A6 /* PLPreferencesWindowController.m in Sources */,
+				C6DA122B0E564161006D8807 /* PLPDFView.m in Sources */,
+				C6240E340E5857E6002D6DD5 /* NSFileManager+MetaData.m in Sources */,
+				C62410D30E58F0DD002D6DD5 /* NSString+Date.m in Sources */,
+				C62412630E59430F002D6DD5 /* PLTextView.m in Sources */,
+				C62414960E5B7593002D6DD5 /* PLOutlineTextView.m in Sources */,
+				C62416390E5E3823002D6DD5 /* PLCompletionTree.m in Sources */,
+				C624163E0E5F3E9A002D6DD5 /* PLCompletion.m in Sources */,
+				C6F646DC0E982D250047A008 /* twain_client.c in Sources */,
+				C6F646F50E98DF060047A008 /* PLTwainManager.m in Sources */,
+				C6F646F80E98DF0F0047A008 /* PLTwainSource.m in Sources */,
+				C6F64A8F0EB279D30047A008 /* PLScannerUtils.m in Sources */,
+				C6F64A9E0EB39E420047A008 /* PLPageSizeInfo.m in Sources */,
+				C6F64BBB0EB664280047A008 /* PLTwainScanner.m in Sources */,
+				C63317BA16D20E5B0004F01D /* PLEyeFiManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C60F2DD00D940DE300DBC40B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C60F2DD10D940DE300DBC40B /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C60F2DD20D940DE300DBC40B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C60F2DD30D940DE300DBC40B /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C60F2DD40D940DE300DBC40B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C60F2DD50D940DE300DBC40B /* English */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		C60F2E740D982CD500DBC40B /* Preferences.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C60F2E750D982CD500DBC40B /* English */,
+			);
+			name = Preferences.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 1;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = PaperLess;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1)";
+				ARCHS_STANDARD_64_BIT_PRE_XCODE_3_1 = x86_64;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = PaperLess;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_OPTIMIZATION_LEVEL = 1;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_PROTOTYPE_CONVERSION = NO;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PaperLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PaperLess" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
